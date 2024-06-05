@@ -2,18 +2,14 @@ import { useState } from "react";
 
 import "./ToDoList.css";
 
-const ListItem = ({ toDoItem, toggleCompletion }) => {
+
+
+const ListItem = ({ toDoItem }) => {
   return (
     <div
       className="listItem"
       style={toDoItem.done ? { backgroundColor: "#b6ebb5" } : null}
     >
-      <input
-        type="checkbox"
-        checked={toDoItem.done}
-        onChange={() => toggleCompletion(toDoItem.id)}
-        className="inputCheckbox"
-      />
       {toDoItem.name}
     </div>
   );

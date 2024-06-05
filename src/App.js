@@ -1,10 +1,12 @@
 import "./App.css";
-import ToDoList from "./pages/ToDoList";
+import SimulateApi from "./components/SimulateApi";
+import Timer from "./components/Timer";
 
 function App() {
   return (
     <div>
-      <ToDoList pageTitle="Lista de tarefas" />
+      <SimulateApi/>
+      <Timer/>
     </div>
   );
 }
